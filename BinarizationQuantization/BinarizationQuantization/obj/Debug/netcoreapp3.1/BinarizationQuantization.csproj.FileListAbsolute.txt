@@ -1,0 +1,17 @@
+C:\Users\Павел\Desktop\Компьютерное зрение\BinarizationQuantization\BinarizationQuantization\obj\Debug\netcoreapp3.1\BinarizationQuantization.csproj.AssemblyReference.cache
+C:\Users\Павел\Desktop\Компьютерное зрение\BinarizationQuantization\BinarizationQuantization\obj\Debug\netcoreapp3.1\BinarizationQuantization.Form1.resources
+C:\Users\Павел\Desktop\Компьютерное зрение\BinarizationQuantization\BinarizationQuantization\obj\Debug\netcoreapp3.1\BinarizationQuantization.Properties.Resources.resources
+C:\Users\Павел\Desktop\Компьютерное зрение\BinarizationQuantization\BinarizationQuantization\obj\Debug\netcoreapp3.1\BinarizationQuantization.csproj.GenerateResource.cache
+C:\Users\Павел\Desktop\Компьютерное зрение\BinarizationQuantization\BinarizationQuantization\obj\Debug\netcoreapp3.1\BinarizationQuantization.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Павел\Desktop\Компьютерное зрение\BinarizationQuantization\BinarizationQuantization\obj\Debug\netcoreapp3.1\BinarizationQuantization.AssemblyInfoInputs.cache
+C:\Users\Павел\Desktop\Компьютерное зрение\BinarizationQuantization\BinarizationQuantization\obj\Debug\netcoreapp3.1\BinarizationQuantization.AssemblyInfo.cs
+C:\Users\Павел\Desktop\Компьютерное зрение\BinarizationQuantization\BinarizationQuantization\obj\Debug\netcoreapp3.1\BinarizationQuantization.csproj.CoreCompileInputs.cache
+C:\Users\Павел\Desktop\Компьютерное зрение\BinarizationQuantization\BinarizationQuantization\bin\Debug\netcoreapp3.1\BinarizationQuantization.exe
+C:\Users\Павел\Desktop\Компьютерное зрение\BinarizationQuantization\BinarizationQuantization\bin\Debug\netcoreapp3.1\BinarizationQuantization.deps.json
+C:\Users\Павел\Desktop\Компьютерное зрение\BinarizationQuantization\BinarizationQuantization\bin\Debug\netcoreapp3.1\BinarizationQuantization.runtimeconfig.json
+C:\Users\Павел\Desktop\Компьютерное зрение\BinarizationQuantization\BinarizationQuantization\bin\Debug\netcoreapp3.1\BinarizationQuantization.runtimeconfig.dev.json
+C:\Users\Павел\Desktop\Компьютерное зрение\BinarizationQuantization\BinarizationQuantization\bin\Debug\netcoreapp3.1\BinarizationQuantization.dll
+C:\Users\Павел\Desktop\Компьютерное зрение\BinarizationQuantization\BinarizationQuantization\bin\Debug\netcoreapp3.1\BinarizationQuantization.pdb
+C:\Users\Павел\Desktop\Компьютерное зрение\BinarizationQuantization\BinarizationQuantization\obj\Debug\netcoreapp3.1\BinarizationQuantization.dll
+C:\Users\Павел\Desktop\Компьютерное зрение\BinarizationQuantization\BinarizationQuantization\obj\Debug\netcoreapp3.1\BinarizationQuantization.pdb
+C:\Users\Павел\Desktop\Компьютерное зрение\BinarizationQuantization\BinarizationQuantization\obj\Debug\netcoreapp3.1\BinarizationQuantization.genruntimeconfig.cache
