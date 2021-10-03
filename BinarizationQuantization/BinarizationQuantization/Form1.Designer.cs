@@ -76,7 +76,7 @@ namespace BinarizationQuantization
             0,
             0});
             this.numericUpDown1.Minimum = new decimal(new int[] {
-            2,
+            1,
             0,
             0,
             0});

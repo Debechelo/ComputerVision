@@ -133,47 +133,7 @@ namespace BinarizationQuantization
 			return t;
 		}
 
-		static void RecMethodOtsu(double[] intensity, List<int> listT, int cntRec)
-		{
-			if (cntRec == 0 || intensity.Length < 3) return;
-			double[] disp = new double[intensity.Length];
-
-
-			double q = intensity[0];
-			double m1 = 0, m2 = 0;
-			double nt = 0, mt = 0;
-			for (int i = 0; i < intensity.Length; ++i)
-			{
-				nt += intensity[i];
-				mt += intensity[i] * i;
-			}
-			mt /= nt;
-
-			for (int i = 1; i < intensity.Length; ++i)
-			{
-				m1 = q * m1 + i * intensity[i];
-				q += intensity[i];
-				if (q == 0 || q == 1) continue;
-				m1 /= q;
-				m2 = (mt - q * m1) / (1 - q);
-				disp[i] = Math.Sqrt(q * (1 - q) * (m1 - m2) * (m1 - m2));
-			}
-
-			var lst = disp.ToList();
-			var t = lst.FindIndex(x => x == lst.Max());
-			listT.Add(t);
-
-			double[] tempInten = new double[t];
-			for (int i = 0; i < t; ++i)
-				tempInten[i] = intensity[i];
-
-			RecMethodOtsu(tempInten, listT, cntRec - 1);
-
-			double[] tempInten1 = new double[intensity.Length - t + 1];
-			for (int i = t; i < intensity.Length; ++i)
-				tempInten1[i - t] = intensity[i];
-			RecMethodOtsu(tempInten1, listT, cntRec - 1);
-		}
+		
 
 		public static Bitmap GlobalOtsu(Bitmap src, int[] intensity)
 		{
@@ -202,9 +162,9 @@ namespace BinarizationQuantization
 			int[] inten1 = new int[256], inten2 = new int[256];
 			for (int x = 0; x < dest.Width; ++x)
 			{
-				for (int y = 0; y < dest.Height / 2; ++y)
+				for (int y = 0; y < dest.Height / 3; ++y)
 					++inten1[src.GetPixel(x, y).R];
-				for (int y = dest.Height / 2; y < dest.Height; ++y)
+				for (int y = dest.Height / 3; y < dest.Height; ++y)
 					++inten2[src.GetPixel(x, y).R];
 			}
 
@@ -257,12 +217,54 @@ namespace BinarizationQuantization
 
 					var first = listT.FindIndex(c => c > t.R);
 
-					if (first % 2 == 0)
-						dest.SetPixel(x, y, b);
+					if (first  != -1)
+						dest.SetPixel(x, y, colors[first]);
 					else
-						dest.SetPixel(x, y, w);
+						dest.SetPixel(x, y, colors[listT.Capacity]);
 				}
 			return dest;
 		}
-    }
+
+		static void RecMethodOtsu(double[] intensity, List<int> listT, int cntRec)
+		{
+			if (cntRec == 0 || intensity.Length < 3) return;
+			double[] disp = new double[intensity.Length];
+
+
+			double q = intensity[0];
+			double m1 = 0, m2 = 0;
+			double nt = 0, mt = 0;
+			for (int i = 0; i < intensity.Length; ++i)
+			{
+				nt += intensity[i];
+				mt += intensity[i] * i;
+			}
+			mt /= nt;
+
+			for (int i = 1; i < intensity.Length; ++i)
+			{
+				m1 = q * m1 + i * intensity[i];
+				q += intensity[i];
+				if (q == 0 || q == 1) continue;
+				m1 /= q;
+				m2 = (mt - q * m1) / (1 - q);
+				disp[i] = Math.Sqrt(q * (1 - q) * (m1 - m2) * (m1 - m2));
+			}
+
+			var lst = disp.ToList();
+			var t = lst.FindIndex(x => x == lst.Max());
+			listT.Add(t);
+
+			double[] tempInten = new double[t];
+			for (int i = 0; i < t; ++i)
+				tempInten[i] = intensity[i];
+
+			RecMethodOtsu(tempInten, listT, cntRec - 1);
+
+			double[] tempInten1 = new double[intensity.Length - t + 1];
+			for (int i = t; i < intensity.Length; ++i)
+				tempInten1[i - t] = intensity[i];
+			RecMethodOtsu(tempInten1, listT, cntRec - 1);
+		}
+	}
 }
