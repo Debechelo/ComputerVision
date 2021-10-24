@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "Y6zL5IlmX7d3GhMRhOpb7/2h5STKHoStAPEhgCzpp0Mb4Zb2IvR6cXkGVBxA2OLbddy3vqQuX0mzGQ+Oy3f4lQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Павел\\Desktop\\Компьютерное зрение\\Skeleton\\Skeleton\\Skeleton.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Павел\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
+    "C:\\Users\\Павел\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\Павел\\.nuget\\packages\\opencvsharp4\\4.5.0.20201013\\opencvsharp4.4.5.0.20201013.nupkg.sha512",
+    "C:\\Users\\Павел\\.nuget\\packages\\opencvsharp4.runtime.win\\4.5.0.20201013\\opencvsharp4.runtime.win.4.5.0.20201013.nupkg.sha512",
+    "C:\\Users\\Павел\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512",
+    "C:\\Users\\Павел\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\Павел\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.7.1\\system.runtime.compilerservices.unsafe.4.7.1.nupkg.sha512"
+  ],
+  "logs": []
+}
